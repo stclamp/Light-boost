@@ -33,6 +33,32 @@ body {
   padding: 0 15px;
 }
 
+.slick-arrow {
+	position: absolute;
+	bottom: 168px;
+	left: 493px;
+	background-color: $yellow;
+	border: none;
+	padding: 22px 27px;
+	width: 66px;
+	height: 66px;
+}
+
+.slick-next {
+	border-radius: 0px 3px 0px 0px;
+	left: 559px;
+	position: absolute;
+}
+
+.slick-prev {
+	border-radius: 3px 0px 0px 0px;
+	position: absolute;
+	z-index: 99;
+}
+
+.hidden {
+	display: none;
+}
 
 
 
