@@ -49,7 +49,7 @@ tabBtns.addEventListener('click', (event) => {
 
 // TIMER 
 
-const deadline = '2021-06-30 00:00';
+const deadline = '2021-07-31 00:00';
 
 function getTimeRemainig(endtime) {
     const t = Date.parse(endtime) - Date.parse(new Date());
@@ -89,6 +89,10 @@ function setClock(selector, endtime) {
 
         if (t.total <= 0) {
             clearInterval(timeInterval);
+            days.innerHTML = 0;
+            hours.innerHTML = 0;
+            minutes.innerHTML = 0;
+            seconds.innerHTML = 0;
         }
     }
 }
