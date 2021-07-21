@@ -98,3 +98,46 @@ function setClock(selector, endtime) {
 }
 
 setClock('.leveling__timer', deadline);
+
+
+//humburger
+
+const humburgerOpen = document.querySelector('.header__humburger');
+const humburgerClose = document.querySelector('.header__humburger-close');
+const menuList = document.querySelector('.header__list');
+const menuInner = document.querySelector('.header__inner')
+const checkinList = document.querySelector('.header__checkin-list');
+
+
+const toggleMenu = () => {
+    menuList.classList.toggle('show_tr');
+    checkinList.classList.toggle('show_tr');
+}
+
+menuInner.addEventListener('click', (e) => {
+    const target = e.target;
+
+    if (target.classList.contains('header__item-link') ||
+        target.classList.contains('header__checkin-login') ||
+        target.classList.contains('header__checkin-reg')) {
+        toggleMenu();
+        humburgerOpen.style.display = 'block';
+        humburgerClose.style.display = 'none';
+
+    }
+    console.log(target)
+
+})
+
+humburgerOpen.addEventListener('click', () => {
+    toggleMenu();
+    humburgerOpen.style.display = 'none';
+    humburgerClose.style.display = 'block';
+});
+
+humburgerClose.addEventListener('click', () => {
+    toggleMenu();
+    humburgerOpen.style.display = 'block';
+    humburgerClose.style.display = 'none';
+});
+

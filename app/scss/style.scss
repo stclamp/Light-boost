@@ -154,6 +154,7 @@ body {
 .promo {
   position: relative;
   min-height: 742px;
+  display: flex;
   &__title {
     font-size: 80px;
     font-weight: 700;
@@ -185,10 +186,10 @@ body {
     }
   }
   &__slider {
-    position: absolute;
-    left: 50%;
-    top: -120px;
-    max-width: 950px;
+    // position: absolute;
+    // left: 50%;
+    // top: -120px;
+    max-width: 900px;
   }
   &__slider-image {
     // width: 967px !important;
@@ -561,3 +562,5 @@ body {
     z-index: 999;
   }
 }
+
+@import "media";

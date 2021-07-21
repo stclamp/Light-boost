@@ -36,7 +36,7 @@ body {
 .slick-arrow {
 	position: absolute;
 	bottom: 168px;
-	left: 493px;
+	left: 300px;
 	background-color: $yellow;
 	border: none;
 	padding: 22px 27px;
@@ -47,7 +47,7 @@ body {
 
 .slick-next {
 	border-radius: 0px 3px 0px 0px;
-	left: 559px;
+	left: 365px;
 	position: absolute;
 	
 }
@@ -65,6 +65,8 @@ body {
 .show {
 	display: block;
 }
+
+
 
 .fade{
 	animation-name: fade;animation-duration: 1.5s;
