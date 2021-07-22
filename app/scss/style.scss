@@ -563,4 +563,11 @@ body {
   }
 }
 
+.header {
+  &__humburger,
+  &__humburger-close {
+    display: none;
+  }
+}
+
 @import "media";
